@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'node1'
+    }
 
     environment {
         IMAGE_NAME = "yarishawn7/food-app"
